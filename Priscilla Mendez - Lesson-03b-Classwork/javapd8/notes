@@ -1,0 +1,187 @@
+
+compile--> javac Main.java 
+run-->java Main
+
+(string)
+"Hello" good , 'Hello' no good
+
+System.out.println("\"Hello\"")
+
+\T->TAB
+
+\n->new line 
+------------------------------------
+09/17
+
+isGameOver
+
+name-> string 
+whole number -> integer
+decimal-> float 
+boolean-> True/False
+objects-> 
+array->
+--------------------------------------
+Java Data Types(Keywords)
+St
+int -> integer
+float,double
+boolean --> true/False
+char -> character
+\ 
+keyword final -> create a constant
+
+---------------------------------------
+void init(){
+    int age = 16j
+    double rate = 0.055
+    string fName = "Barney";
+    char finitial = `I`;
+    // declaring a constant variable 
+    final int maxNumber of seats = 750;
+}
+
+------------------------------------------
+09/18
+
++
+-
+*
+/
+++ -->(add 1 to the variable)
+-- -->(Subtract 1 from the variable)
++= -->(adding a value to a variable)
+    ex: 
+        sum += 5;
+-= -->(subtract a value from a variable)
+    ex:
+        sum -= 10;
+
+
+Normal math
+
+1/2 = 0.5
+-----------
+java is data type driven:
+1/2 = 0
+3/2 = 1
+5/2 = 2
+
+Integer:
+occurs only when 2 integrs are divided,the result is an integer(decimal are truncated)
+1.0/2 = 0.5
+1/2.0 = 0.5
+1.0/2.0 = 0.5
+
+__________________________________________
+09/24
+                    (object)
+we will use the input class to new information from the keyboard:
+function name:   return Data Type
+Input.readInt() --> integer (int)
+Input.readdouble() --> double
+Input.readstring() --> string
+Input.readchar() --> char
+Input.readBoolean --> boolean
+
+Classwork:
+
+System.out.print("Enter your age");
+int age = Input.readint();
+System.out.print("Your age is " + age);
+
+System.out.print("Enter your GPA: ");
+gpa = input.nextDouble();
+System.out.println("Your GPA is: " + gpa);
+
+System.out.print("Enter your First name: ");
+Name = input.readint();
+System.out.println("Your first name is: " + name);
+
+System.out.print("Do you want to play");
+play = input.readint();
+System.out.println("Your game is: " + play);
+
+______________________________________________________________________
+09/25/2026
+
+Math.pow(base, exposure);
+
+Math.pow(x,100);
+
+Math.pow(x-5, 9);
+
+reemain a double <-- Math.sqrt()
+
+double c = Math.sqrt(Math.pow(a,2)+ Math.pow(b,2));
+
+double c = Math.sqrt(a*a + b*b);
+
+ex:
+double c = Math.sqrt(Math.pow(x,5)-2);
+______________________________________________________________________
+Classwork1:
+\
+System.out.printIn("Enter A");
+double A = Input.readdouble();
+
+System.out.printIn("Enter X");
+double X = Input.readdouble();
+
+double Z = Math.pow(A, 2*x + 1);
+
+Classwork2:
+\
+System.out.printIn("Enter X");
+double X = Input.readdouble();
+
+double y = (2 * x) / Math.sin(3*X);
+
+Classwork3:
+\
+System.out.printIn("Enter X");
+double X = Input.readdouble();
+
+double b = Math.abs(Math.pow(X, 2)+ 1);
+
+______________________________________________________________
+09/29
+write function that print welcome to a person by passing the person's name 
+
+void greeting(String name){
+
+    System.out.printIn("Welcome + name");
+
+}
+
+
+void init(){
+
+    greeting2("Crusty the Clown");
+
+    double area = area of Rect(11 , 21.51);
+
+}
+
+
+Write function that calculated the area of a rectanngle
+area = LW
+double area of Rect( double L, double W){
+    double result = L * W;
+    return result;
+}
+
+Problem 1:
+def madlib(noun: str, adjective: str, verb: str) -> str:
+    # Combines the inputs into a full sentence
+    return f"The {adjective} {noun} {verb}"
+
+Problem 2:
+def calculate_square_area(side_length: float) -> float:
+    # Area of a square = side * side
+    return side_length ** 2
+
+Problem 3:
+def calculate_circle_area(radius: float) -> float:
+    # Area of a circle = π * r²
+    return math.pi * (radius ** 2)
