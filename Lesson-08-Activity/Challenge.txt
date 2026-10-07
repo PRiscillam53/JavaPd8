@@ -5,12 +5,6 @@ Challenge 1:
 
 Write a function "print" which takes in a string and displays it to the console. Test the function to make sure it works.
 
-function print(text) {
-    console.log(text);
-}
-
-// Testing the function
-print("Hello, World! Challenge 1 works perfectly.");
 
 
 Challenge 2:

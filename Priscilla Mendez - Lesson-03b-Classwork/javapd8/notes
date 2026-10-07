@@ -174,7 +174,7 @@ double area of Rect( double L, double W){
 Problem 1:
 def madlib(noun: str, adjective: str, verb: str) -> str:
     # Combines the inputs into a full sentence
-    return f"The {adjective} {noun} {verb}"
+    return f"The {adjective} {noun} {verb}
 
 Problem 2:
 def calculate_square_area(side_length: float) -> float:
@@ -184,4 +184,117 @@ def calculate_square_area(side_length: float) -> float:
 Problem 3:
 def calculate_circle_area(radius: float) -> float:
     # Area of a circle = π * r²
-    return math.pi * (radius ** 2)
+    return math.pi * (radius ** 2);
+
+____________________________________________________________________________
+09/30
+
+String Madlib (String verb, String adj, String noun){
+    string result = "the" + adj + "b/" + noun + "b/" + verb;
+    return result; 
+}
+
+double areaofSquare(double side){
+    double result = side * side;
+    return result; 
+}
+_________________________________________________________________________________
+10/2
+
+if(pass){
+    printIn("pass")
+}
+else{
+    printIn("fail")
+}
+
+red -> stop
+yellow -> slow down
+greem -> go 
+
+if(red){
+    stop
+}
+else if (green){
+    go
+}
+else {
+    slow down
+}
+
+Problem:1
+string weather(double temp){
+    if(temp >= 70)
+        return "Warm to Hot";
+    else
+        return "Cool to Cold";
+}
+Problem2:
+string batteryStatus(double battery){
+    if (battery < 0.1) 
+        return "Need to recharge";
+    else 
+        return "Normal";
+}    
+
+Classwork:
+1. double discount(double amountSpent){ 
+    if (amountSpent > 100)
+        return 0.10;
+    else 
+        return 0.0; 
+}
+2. string honors(double gpa){ 
+    if (gpa >= 90) 
+        return "Honor Student"; 
+    else return "Work harder"; 
+}
+3. string shortSize(double wasteMeasurement){ 
+    if (wasteMeasurement < 36) 
+        return "Medium"; 
+    else return "Large"; 
+}
+______________________________________________________________
+10/05:
+
+conditions for graduation
+if (!(credits >= 44 && gradelevel >= 11));
+    graduate
+
+if (!(credits < 44 || gradelevel < 11))
+    cant graduate
+
+!(true)-False
+!(false)-True
+        T           T               F               T
+if (temp > 60 && temp<70 && players== 9 || players== 18)
+                Game is on 
+             
+Classwork:
+problem 1:
+if (gpa >= 3.2 || satScore >= 1450) {
+        return "ACCEPTED";
+    } else {
+        return "Not Accepted";
+}
+problem2:
+ if (speed >= 40 && speed <= 65) {
+        return "Fuel Economy";
+    } else {
+        return "Not Optimal";
+
+}
+problem3:
+    if (speed >= 60 && speed <= 70) {
+        return 75;
+    } else if (speed > 70) {
+        return 75 + (speed - 70) * 2;
+    } else {
+        return 75; 
+}
+problem4:
+ if (totalCost > 250 && (item1 >= 100 || item2 >= 100 || item3 >= 100)) {
+        return totalCost * 0.90; 
+    } else {
+        return totalCost; 
+}
